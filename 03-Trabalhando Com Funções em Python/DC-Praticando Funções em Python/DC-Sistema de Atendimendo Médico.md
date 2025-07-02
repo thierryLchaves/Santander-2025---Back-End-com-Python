@@ -74,4 +74,4 @@ A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectiva
 
 __Atenção:__  É extremamente importante que as entradas e saídas sejam exatamente iguais às descritas na descrição do desafio de código.
 
-[Código](DC-Organizador%20de%20Eventos.py)
+[Código](DC-Sistema%20de%20Atendimendo%20Médico.py)

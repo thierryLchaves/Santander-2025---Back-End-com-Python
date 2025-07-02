@@ -2,13 +2,14 @@
 
 ## Princípios Básicos 
 __Descrição__   
-Uma empresa quer criar um organizador de eventos que divida os participantes em grupos de acordo com o tema escolhido.
+Uma pousada deseja automatizar seu sistema de reservas. Crie uma função que receba uma lista de quartos disponíveis e uma lista de reservas solicitadas. A função deve verificar quais reservas podem ser aceitas e quais devem ser recusadas por falta de disponibilidade.
 
 __Entrada__  
-- Lista de participantes e o tema escolhido por cada um.
+- Uma lista contendo os números dos quartos disponíveis.
+- Uma lista contendo os números dos quartos solicitados pelos clientes.
 
 __Saída__  
-- Dicionário agrupando os participantes por tema.
+- Uma mensagem informando quais reservas foram confirmadas e quais foram recusadas.
 
 __Exemplos__  
 A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectivas saídas esperadas. Certifique-se de testar seu programa com esses exemplos e com outros casos possíveis.
@@ -25,46 +26,36 @@ A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectiva
 <tr> 
 <tr> 
     <td style="text-align: center;">
-        3 </br>
-        Lucas, Fotografia </br>
-        Ana, Viagem </br>
-        Carlos, Fotografia 
+        101 102 103 104 </br>
+        102 105 101 103
     </td>
     <td style="text-align: center;">
-        Fotografia: Lucas, Carlos </br>
-        Viagem: Ana	 
+       Reservas confirmadas: 102 101 103 </br>
+       Reservas recusadas: 105
     </td>
 <tr> 
 <tr> 
     <td style="text-align: center;">
-        4 </br>
-        João, Música </br>
-        Pedro, Música </br>
-        Maria, Dança </br>
-        Ana, Dança
+        201 202 203 204 205 </br>
+        205 202 208 201 203
     </td>
     <td style="text-align: center;">
-        Música: João, Pedro </br>
-        Dança: Maria, Ana
+        Reservas confirmadas: 205 202 201 203 </br>
+        Reservas recusadas: 208
     </td>
 <tr> 
 <tr> 
     <td style="text-align: center;">
-        5 </br>
-        Ana, Tecnologia </br>
-        Carlos, Esportes </br>
-        Maria, Tecnologia </br>
-        Pedro, Música </br>
-        João, Esportes
+        10 20 30 40 50 </br>
+        25 30 10 40 50 60
     </td>
     <td style="text-align: center;">
-        Tecnologia: Ana, Maria </br>
-        Esportes: Carlos, João </br>
-        Música: Pedro
+        Reservas confirmadas: 30 10 40 50 </br>
+        Reservas recusadas: 25 60
     </td>
 <tr> 
 </table>
 
 __Atenção:__  É extremamente importante que as entradas e saídas sejam exatamente iguais às descritas na descrição do desafio de código.
 
-[Código](DC-Simulador%20de%20Carrinho%20de%20Compras.py)
+[Código](DC-%20Sistema%20de%20Reservas%20de%20Hotel.py)
