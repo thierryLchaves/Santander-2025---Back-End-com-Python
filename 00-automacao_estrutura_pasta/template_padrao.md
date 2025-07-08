@@ -11,8 +11,8 @@
 
 --- 
 ### Links Uteis
-- [Trilha no git](https://github.com/digitalinnovationone/trilha-python-dio)
-- [Documentação input](https://doc.python.org/3/library/functions.html#input)
+- [EXEMPL](https://github.com/digitalinnovationone/trilha-python-dio)
+
 ---
 As respostas da aula {x} estão [aqui](IMGS)
 

@@ -60,18 +60,18 @@ Neste repositório será adotada toda documentação em Markdown, sendo assim se
     - [X] Aprendendo a utilizar Dicionários em Python 
     - [X] Desafio de Código: Aplicando Estruturas de dados e Listas
   
-- [ ] <b>Trabalhando com Funções em Python </b>
+- [X] <b>Trabalhando com Funções em Python </b>
     - [x] Dominando Funções Python 
     - [X] Otimizando Sistema Bancário com funções Python 
-    - [ ] Desafio de Código: Praticando funções em Python
+    - [x] Desafio de Código: Praticando funções em Python
 
-- [ ] <b>Orientação a Objetos e Boas Práticas em Python </b>
-    - [ ] Introdução à Programação Orientada a Objetos (POO) com Python
-    - [ ] Aprendendo o Conceito de Herança com Python
-    - [ ] Aplicando Encapsulamento em Python
-    - [ ] Conhecendo Polimorfismo em Python
-    - [ ] Interfaces e Classes Abstratas com Python
-    - [ ] Modelando o Sistema Bancário em POO com Python 
+- [X] <b>Orientação a Objetos e Boas Práticas em Python </b>
+    - [X] Introdução à Programação Orientada a Objetos (POO) com Python
+    - [X] Aprendendo o Conceito de Herança com Python
+    - [X] Aplicando Encapsulamento em Python
+    - [X] Conhecendo Polimorfismo em Python
+    - [X] Interfaces e Classes Abstratas com Python
+    - [X] Modelando o Sistema Bancário em POO com Python 
 
 - [ ] <b>Trabalhando com Pacotes Python </b>
     - [ ] Decoradores, Iteradores e Geradores com Python
@@ -111,7 +111,7 @@ Titulo: Readme
 Autor: Thierry Lucas Chaves  
 Data criacao: 08-05-2025  
 
-Data modificacao: 30-06-2025  
+Data modificacao: 08-07-2025  
 
 Versao: 1.0  
 
