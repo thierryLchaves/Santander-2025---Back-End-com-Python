@@ -1,0 +1,5 @@
+# arquivo = open("/home/tlchaves/Documentos/Estudos/DIO/Santander-python/Santander-2025---Back-End-com-Python/05-Trabalhando com Pacotes Python/03-Manipulando Arquivos em Python/src/lorem.txt",'r')
+arquivo = open("/home/tlchaves/Documentos/Estudos/DIO/Santander-python/Santander-2025---Back-End-com-Python/05-Trabalhando com Pacotes Python/03-Manipulando Arquivos em Python/src/teste.txt",'w')
+arquivo.write("Escrevendo dados em um novo arquivo.")
+arquivo.writelines(["\n","escrevendo ","\n","um ","\n","novo ","\n","texto"])
+arquivo.close()
