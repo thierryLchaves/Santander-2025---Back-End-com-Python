@@ -74,9 +74,9 @@ Neste repositório será adotada toda documentação em Markdown, sendo assim se
     - [X] Modelando o Sistema Bancário em POO com Python 
 
 - [ ] <b>Trabalhando com Pacotes Python </b>
-    - [ ] Decoradores, Iteradores e Geradores com Python
+    - [X] Decoradores, Iteradores e Geradores com Python
     - [X] Lidando com Data, Hora e Fuso Horário em Python 
-    - [ ] Manipulando Arquivos em Python
+    - [X] Manipulando Arquivos em Python
     - [ ] Gerenciamento de Pacotes, Convenções e Boas Práticas Python
     - [ ] Desafio de Código: Praticando Desenvolvimento em Python
 
@@ -107,12 +107,50 @@ ao executar o código o usuário deverá inserir os caminho absolutos da pasta q
 </table>
 
 ---
-Titulo: Readme  
-Autor: Thierry Lucas Chaves  
-Data criacao: 08-05-2025  
+<table style="text-align: center; width: 100%;"> 
+    <caption><b>Skils do projeto </b></caption>
+    <tr>
+        <td style="text-align: center;">
+        <img alt="Markdown" src="[https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)"/>
+        </td>
+    </tr>
+</table>
 
-Data modificacao: 08-07-2025  
+<div style="font-family: monospace; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 10px; margin-top:20px; margin-bottom: 20px;">
+  <p><strong>titulo:</strong> "Nome do Documento"</p>
+  <p><strong>autor:</strong> "Thierry Lucas Chaves"</p>
+  <p><strong>data_criacao:</strong> <time id="data-criacao-html">...</time></p>
+  <p><strong>data_modificacao:</strong> <time id="data-modificacao-html">...</time></p>
+  <p><strong>versao:</strong> "1.0"</p>
+</div>
 
-Versao: 1.0  
+<script>
+  function formatarData(data) {
+    const dia = String(data.getDate()).padStart(2, '0');
+    const mes = String(data.getMonth() + 1).padStart(2, '0');
+    const ano = data.getFullYear();
+    return `${dia}-${mes}-${ano}`;
+  }
 
+  // Pega a data e hora atuais
+  const agora = new Date();
+  const dataFormatada = formatarData(agora);
+
+  // --- LÓGICA PARA DATA DE MODIFICAÇÃO (Automático) ---
+  const elementoModificacao = document.getElementById('data-modificacao-html');
+  if (elementoModificacao) {
+    elementoModificacao.textContent = `"${dataFormatada}"`;
+    elementoModificacao.setAttribute('datetime', agora.toISOString());
+  }
+  
+  // --- LÓGICA PARA DATA DE CRIAÇÃO (Manual) ---
+  // IMPORTANTE: Defina a data de criação do seu arquivo aqui!
+  const dataCriacaoFixa = "18-07-2025"; 
+  
+  const elementoCriacao = document.getElementById('data-criacao-html');
+  if (elementoCriacao) {
+    elementoCriacao.textContent = `"${dataCriacaoFixa}"`;
+    elementoCriacao.setAttribute('datetime', '2025-07-18'); // Formato AAAA-MM-DD
+  }
+</script>
 ---
