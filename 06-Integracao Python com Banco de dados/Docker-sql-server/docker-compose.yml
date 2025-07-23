@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  sql-server-db:
+    build: .
+    container_name: sql_server_container
+    ports:
+      - "1433:1433"
+    environment:
+      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD}
+    volumes:
+      - sql_server_data:/var/opt/mssql
+
+volumes:
+  sql_server_data:

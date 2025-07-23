@@ -1,0 +1,17 @@
+# Arquivos de ambiente - NUNCA ENVIAR PARA O GITHUB!
+.env
+
+# Ignorar o ambiente virtual do Python
+/venv/
+
+# Ignorar o cache do Python
+/__pycache__/
+*.pyc
+
+# Outras pastas de dependências (exemplo se usar Node.js)
+/node_modules/
+
+# Logs e arquivos de build
+*.log
+/build/
+/dist/
