@@ -4,7 +4,7 @@ services:
   sql-server-db:
     build:
       context: .
-      dockerfile: ./Docker-sql-server/dockerfile
+      dockerfile: Dockerfile
     container_name: sql_server_container
     ports:
       - "1433:1433"

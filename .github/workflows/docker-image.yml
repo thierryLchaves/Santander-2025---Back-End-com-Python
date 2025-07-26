@@ -1,4 +1,4 @@
-name: Docker Image CI with Compose
+name: Docker CI with Compose
 
 on:
   push:
@@ -15,8 +15,7 @@ jobs:
       uses: actions/checkout@v4
     
     - name: Build the Docker image using docker-compose
-
-      run: docker compose build sql-server-db
+      run: |
+        docker compose --file "./Santander-2025---Back-End-com-Python/06-Integracao Python com Banco de dados/Docker-sql-server/docker-compose.yml" build sql-server-db
       env:
         MSSQL_SA_PASSWORD: ${{ secrets.DB_PASSWORD }}
-    
