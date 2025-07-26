@@ -82,7 +82,7 @@ Neste repositório será adotada toda documentação em Markdown, sendo assim se
 
 - [ ] <b>Integração Python com Banco de Dados </b>
     - [X] Introdução Banco de Dados
-    - [ ] Introdução a Banco de Dados Relacionais (SQL)
+    - [X] Introdução a Banco de Dados Relacionais (SQL)
     - [ ] Introdução ao MongoDB e Banco de Dados NoSQL
     - [ ] Explorando Banco de Dados Relacionais com Python DB API
 
@@ -116,11 +116,11 @@ Data criacao: 08-05-2025  
 
 
 
-Data modificacao: 21-07-2025  
+Data modificacao: 26-07-2025  
 
 
 
-Versao: 1.1  
+Versao: 1.2  
 
 
 
