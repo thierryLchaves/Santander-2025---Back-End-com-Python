@@ -2,7 +2,9 @@ version: '3.8'
 
 services:
   sql-server-db:
-    build: .
+    build:
+      context: .
+      dockerfile: ./Docker-sql-server/dockerfile
     container_name: sql_server_container
     ports:
       - "1433:1433"
