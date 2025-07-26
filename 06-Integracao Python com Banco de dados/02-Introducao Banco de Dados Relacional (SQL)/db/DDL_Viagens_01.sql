@@ -1,0 +1,13 @@
+-- IF NOT EXISTS (SELECT * FROM sys.databases WHERE  name = 'viagens')
+-- BEGIN
+-- CREATE DATABASE viagens;
+-- END
+-- GO
+-- USE viagens;
+-- EXEC sp_addextendedproperty
+--     @name = N'MS_Description',
+--     @value = N'Descrição detalhada da tabela de clientes.',
+--     @level0type = N'SCHEMA',
+--     @level0name = N'dbo', -- ou o nome do seu schema
+--     @level1type = N'TABLE',
+--     @level1name = N'Clientes';
