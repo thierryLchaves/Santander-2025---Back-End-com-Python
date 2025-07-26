@@ -7,15 +7,33 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  smoke-test:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-    
-    - name: Build the Docker image using docker-compose
+
+    - name: Start services
       run: |
-        docker compose --file "./06-Integracao Python com Banco de dados/Docker-sql-server/docker-compose.yml" build sql-server-db
+        docker compose --file "./06-Integracao Python com Banco de dados/Docker-mysql/docker-compose.yml" up -d
       env:
-        MSSQL_SA_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        # A sintaxe correta para usar os secrets
+        MARIADB_ROOT_PASSWORD: ${{ secrets.DB_ROOT_PASSWORD }}
+        MARIADB_DATABASE: ${{ secrets.DB_NAME }}
+        MARIADB_USER: ${{ secrets.DB_USER }}
+        MARIADB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+
+    - name: Check running containers
+      run: docker ps
+
+    # Opcional, mas recomendado: verificar logs por erros
+    - name: Check container logs
+      run: |
+        docker compose --file "./06-Integracao Python com Banco de dados/Docker-mysql/docker-compose.yml" logs
+
+    # Limpeza no final do job
+    - name: Stop services
+      if: always() # Garante que este passo sempre rode, mesmo que os anteriores falhem
+      run: |
+        docker compose --file "./06-Integracao Python com Banco de dados/Docker-mysql/docker-compose.yml" down
