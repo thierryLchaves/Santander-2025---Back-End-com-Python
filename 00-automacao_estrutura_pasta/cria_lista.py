@@ -213,7 +213,7 @@ if __name__ == "__main__":
 
     msg_sub_pasta = "informe o  nome do caminho absoluto onde será criado os arquivos: "
     nm_sub_pasta = input(msg_sub_pasta)
-    path_template = ROOT_PATH / "Template_padrao.md"
+    path_template = ROOT_PATH / "template_padrao.md"
     nome_autor = input("informe o  nome do autor que ficara nos arquivos: ")
     sub_diretorios = list_diretorios(nm_sub_pasta, PASTAS_PADRAO)
     cria_arquivo(sub_diretorios, path_template, nome_autor)

@@ -87,7 +87,7 @@ Neste repositório será adotada toda documentação em Markdown, sendo assim se
     - [X] Explorando Banco de Dados Relacionais com Python DB API
 
 - [ ] <b>Desenvolvimento Orientado a Teste com Python </b>
-    - [ ] Introdução a Aplicação Rest
+    - [X] Introdução a Aplicação Rest
     - [ ] Desenvolvimento sua primeira API com FastAPI, Python e Docker
     - [ ] Criando uma API com FastAPI Utilizando TDD
     
